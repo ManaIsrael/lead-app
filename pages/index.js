@@ -7,7 +7,7 @@ export default function Home() {
   const [leads, setLeads] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/leads').then(res => setLeads(res.data));
+    axios.get('https://lead-app-backend-tkmu.onrender.com').then(res => setLeads(res.data));
   }, []);
 
   const addLead = lead => {
